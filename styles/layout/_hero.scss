@@ -1,6 +1,6 @@
 .hero {
   height: 75.4rem - 6rem;
-  background: url("images/bg-hero.jpg") 53rem 10rem no-repeat;
+  background: url("/images/bg-hero.jpg") 53rem 10rem no-repeat;
 
   @include tablet {
     background-position: bottom;

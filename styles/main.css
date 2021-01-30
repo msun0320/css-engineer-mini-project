@@ -362,11 +362,11 @@ a {
 }
 
 .feature-card-1 {
-  background: url("images/bg-1.svg") right no-repeat;
+  background: url("/images/bg-1.svg") right no-repeat;
 }
 
 .feature-card-1__bg {
-  background: url("images/bg-image-1.jpg") no-repeat;
+  background: url("/images/bg-image-1.jpg") no-repeat;
   height: 21.1rem;
 }
 
@@ -383,11 +383,11 @@ a {
 }
 
 .feature-card-2 {
-  background: url("images/bg-2.svg") right no-repeat;
+  background: url("/images/bg-2.svg") right no-repeat;
 }
 
 .feature-card-2__bg {
-  background: url("images/bg-image-2.jpg") no-repeat;
+  background: url("/images/bg-image-2.jpg") no-repeat;
   height: 18.5rem;
 }
 
@@ -400,11 +400,11 @@ a {
 }
 
 .feature-card-3 {
-  background: url("images/bg-3.svg") right no-repeat;
+  background: url("/images/bg-3.svg") right no-repeat;
 }
 
 .feature-card-3__bg {
-  background: url("images/bg-image-3.jpg") no-repeat;
+  background: url("/images/bg-image-3.jpg") no-repeat;
   height: 18.1rem;
 }
 
@@ -417,11 +417,11 @@ a {
 }
 
 .feature-card-4 {
-  background: url("images/bg-4.svg") right no-repeat;
+  background: url("/images/bg-4.svg") right no-repeat;
 }
 
 .feature-card-4__bg {
-  background: url("images/bg-image-4.jpg") no-repeat;
+  background: url("/images/bg-image-4.jpg") no-repeat;
   height: 20.1rem;
 }
 
@@ -640,7 +640,7 @@ a {
 
 .hero {
   height: 69.4rem;
-  background: url("images/bg-hero.jpg") 53rem 10rem no-repeat;
+  background: url("/images/bg-hero.jpg") 53rem 10rem no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -819,7 +819,7 @@ body {
 }
 
 .about__inner {
-  background: rgba(240, 99, 184, 0.15) url("images/bg-about.jpg") 1.1rem 3.2rem no-repeat;
+  background: rgba(240, 99, 184, 0.15) url("/images/bg-about.jpg") 1.1rem 3.2rem no-repeat;
   border-radius: 50px;
   height: 56rem;
   position: relative;
