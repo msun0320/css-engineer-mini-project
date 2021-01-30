@@ -1,0 +1,20 @@
+.container {
+  max-width: 112rem;
+  margin: auto;
+
+  @include laptop {
+    width: 90rem;
+  }
+
+  @include tablet {
+    width: 70rem;
+  }
+
+  @include mobile {
+    width: 100vw;
+  }
+}
+
+.hidden {
+  display: none;
+}

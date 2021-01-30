@@ -1,0 +1,120 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family-primary;
+  font-weight: $medium;
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: $cyan-blue;
+
+  @include mobile {
+    font-size: 1.6rem;
+  }
+}
+
+.headline {
+  font-family: $font-family-secondary;
+  font-weight: $bold;
+  line-height: 130%;
+  color: $blue;
+
+  &_large {
+    font-size: 8rem;
+    line-height: 110%;
+
+    @include mobile {
+      font-size: 4rem;
+    }
+  }
+
+  &_medium {
+    font-size: 4rem;
+
+    @include mobile {
+      font-size: 2.4rem;
+    }
+  }
+
+  &_small {
+    font-weight: $normal;
+    font-size: 2.4rem;
+  }
+
+  &_exrtasmall {
+    font-family: $font-family-primary;
+    font-weight: $black;
+    font-size: 1.6rem;
+  }
+}
+
+.text {
+  &_button {
+    font-weight: $extrabold;
+    color: #fff;
+
+    &_long {
+      font-size: 1.6rem;
+      color: $blue;
+      letter-spacing: 0.005em;
+    }
+  }
+
+  &_feature {
+    &_content {
+      font-weight: $normal;
+      font-size: 1.6rem;
+    }
+
+    &_link {
+      font-weight: $extrabold;
+      font-size: 1.6rem;
+    }
+  }
+
+  &_carousel {
+    &_name {
+      font-weight: $extrabold;
+      letter-spacing: 0.005em;
+      color: $blue;
+    }
+
+    &_info {
+      font-size: 1.4rem;
+      letter-spacing: 0.01em;
+      color: $purple;
+    }
+
+    &_content {
+      font-weight: $normal;
+      line-height: 180%;
+    }
+  }
+
+  &_logo {
+    font-weight: $black;
+    font-size: 20px;
+  }
+
+  &_footer_menu_link {
+    font-weight: $normal;
+    font-size: 1.6rem;
+    line-height: 250%;
+  }
+
+  &_address {
+    font-size: 1.6rem;
+    line-height: 180%;
+    color: $blue;
+  }
+
+  &_contact_info {
+    font-weight: $normal;
+  }
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}

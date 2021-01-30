@@ -1,0 +1,97 @@
+.carousel {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 64.5rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.1);
+    border-radius: 20px;
+    padding: 6rem 7rem 5rem;
+    display: grid;
+    grid-template: auto 1fr / auto 1fr;
+    gap: 0 3rem;
+    text-align: left;
+    display: none;
+
+    @include tablet {
+      width: 50rem;
+    }
+
+    @include mobile {
+      width: 30rem;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    &_active {
+      box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+      display: grid;
+      order: -1;
+    }
+
+    &_next {
+      padding-left: 4rem;
+      background: linear-gradient(
+        270deg,
+        #9c69e2 45%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      display: grid;
+    }
+
+    &_avatar {
+      border-radius: 50px;
+    }
+
+    &_title {
+      align-self: center;
+    }
+
+    &_content {
+      grid-column: 2 / span 1;
+
+      @include mobile {
+        grid-column: 1;
+      }
+    }
+  }
+
+  &__indicator {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background: #fff;
+    display: inline-block;
+
+    &_active {
+      width: 10px;
+      height: 10px;
+      background: $pink;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5.8rem 7.6rem 5.8rem 0;
+  }
+
+  &__indicators {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}

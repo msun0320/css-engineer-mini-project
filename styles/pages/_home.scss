@@ -1,0 +1,106 @@
+@import "../layout/hero";
+@import "../components/carousel";
+
+body {
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.about {
+  padding-top: 10.2rem;
+
+  &__inner {
+    background: rgba(240, 99, 184, 0.15) url(../../images/bg-about.jpg) 1.1rem
+      3.2rem no-repeat;
+    border-radius: 50px;
+    height: 56rem;
+    position: relative;
+
+    @include laptop {
+      background-position: 0 0;
+    }
+
+    @include tablet {
+      height: 100rem;
+    }
+
+    @include mobile {
+      background: rgba(240, 99, 184, 0.15);
+      height: auto;
+      padding: 10rem 0 6rem;
+    }
+  }
+
+  &__title-content {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+
+    @include tablet {
+      top: 55%;
+      left: 25%;
+    }
+
+    @include mobile {
+      position: static;
+    }
+  }
+
+  &__content {
+    margin: 4rem 0;
+    max-width: 47.4rem;
+  }
+}
+
+.features {
+  padding-top: 15rem;
+
+  &__title {
+    text-align: center;
+
+    &_content {
+      margin: 5rem auto 10rem;
+      max-width: 58.4rem;
+    }
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 4.3rem;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.testimonials {
+  padding: 15rem 0;
+
+  &__inner {
+    border-radius: 50px;
+    background: $purple;
+    padding: 10.9rem 0 0 9.3rem;
+    box-sizing: border-box;
+
+    @include mobile {
+      padding-left: 5rem;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: 8.8rem;
+  }
+}
+
+.line-break {
+  height: 2px;
+  background-color: $purple;
+  border: none;
+  opacity: 0.2;
+}

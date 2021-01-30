@@ -1,0 +1,55 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding-top: 4.7rem;
+
+  @include tablet {
+    .button_long {
+      display: none;
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  &__menu {
+    margin-left: 12.1rem;
+
+    @include mobile {
+      margin: 0;
+    }
+
+    &_item {
+      margin-right: 4rem;
+      display: inline-block;
+      font-size: 0;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+
+    &_link {
+      color: $cyan-blue;
+      display: inline-block;
+      text-align: center;
+      font-size: 1.6rem;
+
+      &:hover {
+        color: $blue;
+        font-weight: $extrabold;
+      }
+
+      &::before {
+        display: block;
+        content: attr(title);
+        font-weight: $extrabold;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
+  }
+}

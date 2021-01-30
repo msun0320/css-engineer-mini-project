@@ -1,0 +1,120 @@
+.feature-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  position: relative;
+  height: 35.8rem;
+
+  @include tablet {
+    max-width: 50rem;
+    margin: auto;
+  }
+
+  @include mobile {
+    text-align: left;
+  }
+
+  &__bg {
+    z-index: 1;
+  }
+
+  &__main {
+    z-index: 1;
+  }
+
+  &__content {
+    margin: 2rem 0;
+    max-width: 22rem;
+    min-height: 16rem;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: end;
+
+    &_arrow {
+      display: inline-block;
+      margin-left: 2rem;
+    }
+  }
+
+  &__blob,
+  &__ellipse {
+    position: absolute;
+  }
+
+  &-1 {
+    background: url(../../images/bg-1.svg) right no-repeat;
+
+    &__bg {
+      background: url(../../images/bg-image-1.jpg) no-repeat;
+      height: 21.1rem;
+    }
+
+    &__blob {
+      width: 20.4rem;
+      top: 1rem;
+      right: 2rem;
+    }
+
+    &__ellipse {
+      width: 3.4rem;
+      top: 4.4rem;
+      right: 11.7rem;
+    }
+  }
+
+  &-2 {
+    background: url(../../images/bg-2.svg) right no-repeat;
+
+    &__bg {
+      background: url(../../images/bg-image-2.jpg) no-repeat;
+      height: 18.5rem;
+    }
+
+    &__blob {
+      width: 22.2rem;
+      right: 2rem;
+      bottom: 2rem;
+      transform: rotate(180deg);
+    }
+  }
+
+  &-3 {
+    background: url(../../images/bg-3.svg) right no-repeat;
+
+    &__bg {
+      background: url(../../images/bg-image-3.jpg) no-repeat;
+      height: 18.1rem;
+    }
+
+    &__ellipse {
+      width: 6.8rem;
+      top: 2.2rem;
+      right: 2.3rem;
+      transform: rotate(129.27deg);
+    }
+  }
+
+  &-4 {
+    background: url(../../images/bg-4.svg) right no-repeat;
+
+    &__bg {
+      background: url(../../images/bg-image-4.jpg) no-repeat;
+      height: 20.1rem;
+    }
+
+    &__blob {
+      width: 32.4rem;
+      top: 3rem;
+      right: 6.5rem;
+      transform: rotate(120deg);
+    }
+
+    &__ellipse {
+      width: 6.2rem;
+      right: 2.4rem;
+      bottom: 2.4rem;
+    }
+  }
+}
